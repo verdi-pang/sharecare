@@ -1,0 +1,55 @@
+import Image from "next/image";
+import StarIcon from '@mui/icons-material/Star';
+import Link from "next/link";
+const listItems = [
+    { name: "2 Person Dome Tent", url: "/product/2persondometent", imgUrl: "/img/drone.jpg", ownerName: "John D.", ownerLocation: "Surrey", price: 20 },
+    { name: "Photography Set", url: "/product/photographySet", imgUrl: "/img/photography.jpg", ownerName: "Johnny D.", ownerLocation: "Surrey", price: 30 },
+    { name: "1 Person Dome Tent", url: "/product/2persondometent", imgUrl: "/img/drone.jpg", ownerName: "John D.", ownerLocation: "Surrey", price: 20 },
+    { name: "Photography Set 1", url: "/product/photographySet", imgUrl: "/img/photography.jpg", ownerName: "Johnny D.", ownerLocation: "Surrey", price: 30 },
+    { name: "3 Person Dome Tent", url: "/product/2persondometent", imgUrl: "/img/drone.jpg", ownerName: "John D.", ownerLocation: "Surrey", price: 20 },
+    { name: "Photography Set 2", url: "/product/photographySet", imgUrl: "/img/photography.jpg", ownerName: "Johnny D.", ownerLocation: "Surrey", price: 30 },
+    { name: "4 Person Dome Tent", url: "/product/2persondometent", imgUrl: "/img/drone.jpg", ownerName: "John D.", ownerLocation: "Surrey", price: 20 },
+    { name: "Photography Set 3", url: "/product/photographySet", imgUrl: "/img/photography.jpg", ownerName: "Johnny D.", ownerLocation: "Surrey", price: 30 }
+]
+const CatItemList = () => {
+    return (
+        <div className="flex flex-row flex-wrap gap-4 justify-center py-4">
+            {listItems.map(item =>
+                <div key={item.name} className="w-[160px]">
+                    <div className='rounded-lg overflow-hidden'>
+                        <Link href={{ pathname: item.url, query: { id: item.name, imgUrl: item.imgUrl, ownerName: item.ownerName, ownerLocation: item.ownerLocation } }}>
+                            <div className='size-40 relative'>
+                                <Image src={item.imgUrl}
+                                    style={{ layout: "fill", objectFit: "cover" }}
+                                    fill
+                                    alt={item.name}
+                                />
+                            </div>
+                        </Link>
+                    </div>
+                    <div className="flex flex-col">
+                        <Link href={item.url}>
+                            <div>
+                                <p className="mt-2 text-base leading-6 text-wrap text-black">{item.name}</p>
+                            </div>
+                        </Link>
+                        <div className="flex gap-0.5 mt-1 tracking-wide items-center">
+                            <div className="text-sm text-black">{item.ownerName}</div>
+                            <StarIcon fontSize="10" />
+                            <div className="text-sm text-gray-600">(23)</div>
+                        </div>
+                        <div className="tracking-wide text-black">{item.ownerLocation}</div>
+                        <div className="text-2xl leading-7 text-black">${item.price}/Day</div>
+                    </div>
+                </div>
+
+            )}
+
+            <div className="justify-center self-center px-6 py-2.5 mt-6 font-medium tracking-normal text-center text-white bg-slate-300 rounded-[300px]">
+                Load More
+            </div>
+        </div>
+    );
+}
+
+export default CatItemList;
