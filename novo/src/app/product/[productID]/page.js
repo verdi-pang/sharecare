@@ -1,3 +1,5 @@
+"use client"
+
 import AlsoViewed from "@/components/alsoViewed/alsoViewed";
 import LandingCTA from "@/components/landingCTA/landingCTA";
 import ProductDesc from "@/components/productDesc/productDesc";

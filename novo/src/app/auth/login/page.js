@@ -1,3 +1,5 @@
+"use client"
+
 export default function Login() {
     return (
         <div className="flex flex-col justify-center px-4 py-2.5 mt-3.5 w-full text-sm font-medium text-violet-950">

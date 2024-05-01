@@ -1,4 +1,5 @@
-import { TextField } from "@mui/material";
+"use client"
+
 import { Input } from "@nextui-org/input";
 
 export default function NewPosting() {
