@@ -16,7 +16,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import Link from 'next/link';
 
-const pages = ['Products', 'About Us', 'FAQ'];
+const pages = [{ name: 'Products', url: "/product" }, { name: 'About Us', url: "/about" }, { name: 'FAQ', url: "/faq" }];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const AppBar_1 = () => {
@@ -91,8 +91,8 @@ const AppBar_1 = () => {
                             }}
                         >
                             {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center"><Link href={'/product'}>{page}</Link></Typography>
+                                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                                    <Typography textAlign="center"><Link href={page.url}>{page.name}</Link></Typography>
                                 </MenuItem>
                             ))}
                         </Menu>
@@ -119,12 +119,12 @@ const AppBar_1 = () => {
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
                             <Button
-                                key={page}
+                                key={page.name}
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }
                                 }
                             >
-                                <Link href={"/product"}>{page}</Link>
+                                <Link href={page.url}>{page.name}</Link>
                             </Button>
                         ))}
                     </Box>

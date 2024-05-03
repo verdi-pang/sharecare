@@ -1,11 +1,11 @@
 import ProductHeaderPressables from "../productHeaderPressables/productHeaderPressables";
 import ProductImage from "../productImage/productImage";
 
-const ProductHeader = () => {
+const ProductHeader = (params) => {
     return (
         <div className="flex flex-col gap-3">
-            <ProductImage />
-            <ProductHeaderPressables />
+            <ProductImage id={params.id} imgUrl={params.imgUrl} />
+            <ProductHeaderPressables id={params.id} imgUrl={params.imgUrl} />
         </div>
     );
 }

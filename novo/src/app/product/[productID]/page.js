@@ -9,17 +9,23 @@ import ProductSuggest from "@/components/productSuggest/productSuggest";
 import ProductUserDesc from "@/components/productUserDesc/productUserDesc";
 import ProductUserMore from "@/components/productUserMore/productUserMore";
 import ProductUserReview from "@/components/productUserReview/productUserReview";
+import { useSearchParams } from "next/navigation";
 
-export default function ProductDetails({ params }) {
-    console.log(params)
+export default function ProductDetails() {
+    const searchParams = useSearchParams();
+    const customParamID = searchParams.get("id");
+    const customParamImgUrl = searchParams.get("imgUrl");
+    const customParamOwnerName = searchParams.get("ownerName")
+    const customParamOwnerLocation = searchParams.get("ownerLocation")
+
     return (
         <div className="flex flex-col gap-4">
             {/* This is {params.productID} */}
-            <ProductHeader />
-            <ProductDesc />
-            <ProductUserDesc />
-            <ProductUserMore />
-            <ProductUserReview />
+            <ProductHeader id={customParamID} imgUrl={customParamImgUrl} ownerLocation={customParamOwnerLocation} />
+            <ProductDesc ownerName={customParamOwnerName} />
+            <ProductUserDesc ownerName={customParamOwnerName} />
+            <ProductUserMore ownerName={customParamOwnerName} />
+            <ProductUserReview ownerName={customParamOwnerName} />
             <ProductFAQ />
             <AlsoViewed />
             <ProductSuggest />

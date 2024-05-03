@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-const ProductHeaderPressables = () => {
+const ProductHeaderPressables = (params) => {
     return (
         <div>
-            <div className="text-2xl">2 Person Dome Tent</div>
+            <div className="text-2xl">{params.id}</div>
             <div className="flex gap-2.5 pb-2.5 mt-4 whitespace-nowrap text-center">
                 <div className="flex flex-col flex-1 p-4 rounded-xl border border-black border-solid">
                     <div className="self-center text-lg leading-6">Daily</div>

@@ -2,12 +2,12 @@ import Image from "next/image";
 import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked';
 import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
 
-const ProductImage = () => {
+const ProductImage = (params) => {
     return (
         <div className="flex flex-col">
             <div className='rounded-lg overflow-hidden'>
                 <div className='w-[366px] h-[366px] relative'>
-                    <Image src="/img/drone.jpg"
+                    <Image src={params.imgUrl}
                         style={{ objectFit: "cover" }}
                         fill
                         alt="image"

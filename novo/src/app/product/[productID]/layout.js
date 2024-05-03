@@ -7,7 +7,7 @@ import { Suspense } from "react";
 export default function productPageLayout({ children }) {
     return (
         <section className="flex flex-col p-3 gap-2">
-            <div className="flex flex-row content-center font-bold"><Link href="/product"><ChevronLeftIcon />Back</Link></div>
+            <Link href="/product"><div className="flex flex-row content-center font-bold"><ChevronLeftIcon /><div>Back</div></div></Link>
             {children}
             <Suspense fallback={<>Loading...</>}>
                 <AvaliabilityModal />
