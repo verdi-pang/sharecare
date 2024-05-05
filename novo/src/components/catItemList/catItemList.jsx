@@ -2,14 +2,14 @@ import Image from "next/image";
 import StarIcon from '@mui/icons-material/Star';
 import Link from "next/link";
 const listItems = [
-    { name: "2 Person Dome Tent", url: "/product/2persondometent", imgUrl: "/img/drone.jpg", ownerName: "John D.", ownerLocation: "Surrey", price: 20 },
+    { name: "2 Person Dome Tent", url: "/product/2persondometent", imgUrl: "/img/tent.jpg", ownerName: "John D.", ownerLocation: "Surrey", price: 20 },
     { name: "Photography Set", url: "/product/photographySet", imgUrl: "/img/photography.jpg", ownerName: "Johnny D.", ownerLocation: "Surrey", price: 30 },
-    { name: "1 Person Dome Tent", url: "/product/2persondometent", imgUrl: "/img/drone.jpg", ownerName: "John D.", ownerLocation: "Surrey", price: 20 },
-    { name: "Photography Set 1", url: "/product/photographySet", imgUrl: "/img/photography.jpg", ownerName: "Johnny D.", ownerLocation: "Surrey", price: 30 },
-    { name: "3 Person Dome Tent", url: "/product/2persondometent", imgUrl: "/img/drone.jpg", ownerName: "John D.", ownerLocation: "Surrey", price: 20 },
-    { name: "Photography Set 2", url: "/product/photographySet", imgUrl: "/img/photography.jpg", ownerName: "Johnny D.", ownerLocation: "Surrey", price: 30 },
-    { name: "4 Person Dome Tent", url: "/product/2persondometent", imgUrl: "/img/drone.jpg", ownerName: "John D.", ownerLocation: "Surrey", price: 20 },
-    { name: "Photography Set 3", url: "/product/photographySet", imgUrl: "/img/photography.jpg", ownerName: "Johnny D.", ownerLocation: "Surrey", price: 30 }
+    { name: "Christmas Decor", url: "/product/christmasDecor", imgUrl: "/img/homeDecor.jpg", ownerName: "James D.", ownerLocation: "Surrey", price: 10 },
+    { name: "Electric Scooter", url: "/product/electricScooter", imgUrl: "/img/scooter.jpg", ownerName: "Jane D.", ownerLocation: "Surrey", price: 30 },
+    { name: "Small Drone", url: "/product/smallDrone", imgUrl: "/img/drone.jpg", ownerName: "Jack D.", ownerLocation: "Surrey", price: 40 },
+    { name: "Christmas Tree", url: "/product/christmasTree", imgUrl: "/img/christmasTree.jpg", ownerName: "Jackson D.", ownerLocation: "Surrey", price: 30 },
+    { name: "Macbook Pro", url: "/product/macbookpro", imgUrl: "/img/electronics.jpg", ownerName: "Jim D.", ownerLocation: "Surrey", price: 10 },
+    { name: "XM Scooter", url: "/product/xmscooter", imgUrl: "/img/scooter_1.jpg", ownerName: "Jonah D.", ownerLocation: "Surrey", price: 20 }
 ]
 const CatItemList = () => {
     return (

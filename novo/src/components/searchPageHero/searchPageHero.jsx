@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 
 const SearchPageHero = () => {
     return (
-        <div className="flex flex-col mt-6 mx-2 px-3 py-6 rounded-xl border border-black border-solid">
+        <div className="flex flex-col mt-6 mx-2 px-3 py-6 rounded-xl border border-black border-solid gap-2">
             <div className="self-start ml-2.5 text-3xl leading-9 text-black">
                 Discover, Share, Find
             </div>

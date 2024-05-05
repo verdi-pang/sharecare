@@ -9,6 +9,14 @@ const catItems = [
     { name: "Home Decorations", imgRef: "https://images.unsplash.com/photo-1511895654441-f6a0e1db5cbd?q=80&w=2079&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
     { name: "Scooters", imgRef: "https://images.unsplash.com/photo-1591479073117-ba593a13822d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }
 ];
+const catItemsList = [
+    { cat: "Camping", imgUrl: "/img/tent.jpg" },
+    { cat: "Film & Photography", imgUrl: "/img/photography.jpg" },
+    { cat: "Drones", imgUrl: "/img/drone.jpg" },
+    { cat: "Electronics", imgUrl: "/img/electronics.jpg" },
+    { cat: "Scooter", imgUrl: "/img/scooter.jpg" },
+    { cat: "Home Decoration", imgUrl: "/img/homeDecor.jpg" }
+]
 
 const CatList = () => {
 
@@ -17,69 +25,26 @@ const CatList = () => {
             <div className="self-center text-2xl leading-7">
                 Explore our categories
             </div>
-            <div>
-                <Link href={"/product"}>
-                    <div className='rounded-lg overflow-hidden'>
-                        <div className='size-40 relative'>
-                            <Image src="/img/drone.jpg"
-                                style={{ layout: "fill", objectFit: "cover" }}
-                                fill
-                                alt="image"
-                            />
+            {
+                catItemsList.map(item =>
+                    <div key={item.cat}>
+                        <Link href={"/product"}>
+                            <div className='rounded-lg overflow-hidden'>
+                                <div className='size-40 relative'>
+                                    <Image src={item.imgUrl}
+                                        style={{ layout: "fill", objectFit: "cover" }}
+                                        fill
+                                        alt="image"
+                                    />
 
-                        </div>
+                                </div>
+                            </div>
+                            <p className='text-center'>{item.cat}</p>
+                        </Link>
                     </div>
-                    <p className='text-center'>Drones</p>
-                </Link>
-            </div>
+                )
+            }
 
-            <div>
-                <Link href={"/product"}>
-                    <div className='rounded-lg overflow-hidden'>
-                        <div className='size-40 relative'>
-                            <Image src="/img/photography.jpg"
-                                style={{ layout: "fill", objectFit: "cover" }}
-                                fill
-                                alt="image"
-                            />
-
-                        </div>
-                    </div>
-                    <p className='text-center'>Drones</p>
-                </Link>
-            </div>
-
-            <div>
-                <Link href={"/product"}>
-                    <div className='rounded-lg overflow-hidden'>
-                        <div className='size-40 relative'>
-                            <Image src="/img/drone.jpg"
-                                style={{ layout: "fill", objectFit: "cover" }}
-                                fill
-                                alt="image"
-                            />
-
-                        </div>
-                    </div>
-                    <p className='text-center'>Drones</p>
-                </Link>
-            </div>
-
-            <div>
-                <Link href={"/product"}>
-                    <div className='rounded-lg overflow-hidden'>
-                        <div className='size-40 relative'>
-                            <Image src="/img/drone.jpg"
-                                style={{ layout: "fill", objectFit: "cover" }}
-                                fill
-                                alt="image"
-                            />
-
-                        </div>
-                    </div>
-                    <p className='text-center'>Drones</p>
-                </Link>
-            </div>
 
         </div>
     );
