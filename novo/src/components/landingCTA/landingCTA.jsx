@@ -1,6 +1,7 @@
 import PriceCheckIcon from '@mui/icons-material/PriceCheck';
 import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const LandingCTA = () => {
     return (
@@ -44,9 +45,11 @@ const LandingCTA = () => {
                     Ready to transform your possessions into a source of income and make a positive impact on the environment?
 
                     Sign up for Sharecare today and become a part of the sharing revolution. Whether you have items to lend or are searching for something specific, Sharecare is the platform that brings people together to share the things they love.</p>
-                <div className="justify-center px-6 py-2.5 mt-4 font-medium tracking-normal text-center text-white bg-slate-500 leading-[143%] rounded-[100px]">
-                    Start sharing now
-                </div>
+                <Link href={"/posting"}>
+                    <div className="justify-center px-6 py-2.5 mt-4 font-medium tracking-normal text-center text-white bg-slate-500 leading-[143%] rounded-[100px]">
+                        Start sharing now
+                    </div>
+                </Link>
             </div>
         </div>
     );

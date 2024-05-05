@@ -9,9 +9,10 @@ const AboutHeader = () => {
             <div className="mt-4 text-base tracking-wide leading-6">
                 Transform Your Possessions into Profits with Novo!
             </div>
-            <div className="justify-center self-start px-6 py-2.5 mt-4 text-sm font-medium tracking-normal leading-5 text-center text-white bg-slate-500 rounded-[100px]">
-                Post an item
-            </div>
+            <Link href={"/posting"}>
+                <div className="justify-center self-start px-6 py-2.5 mt-4 text-sm font-medium tracking-normal leading-5 text-center text-white bg-slate-500 rounded-[100px]">
+                    Post an item
+                </div></Link>
             <div className='w-[21rem] h-[20rem] relative'>
                 <Image
                     src="/img/aboutHeader.svg"

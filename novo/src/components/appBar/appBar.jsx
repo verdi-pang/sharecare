@@ -17,7 +17,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import Link from 'next/link';
 
 const pages = [{ name: 'Products', url: "/product" }, { name: 'About Us', url: "/about" }, { name: 'FAQ', url: "/faq" }];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const settings = [{ name: 'Dashboard', url: "/dashboard" }, { name: 'Profile', url: "/dashboard/profile" }, { name: 'Account', url: "/dashboard/account" }, { name: 'Logout', url: "/" }];
 
 const AppBar_1 = () => {
 
@@ -153,7 +153,7 @@ const AppBar_1 = () => {
                         >
                             {settings.map((setting) => (
                                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                                    <Typography textAlign="center">{setting}</Typography>
+                                    <Typography textAlign="center"><Link href={setting.url}>{setting.name}</Link></Typography>
                                 </MenuItem>
                             ))}
                         </Menu>
