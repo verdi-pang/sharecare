@@ -22,7 +22,7 @@ const CatList = () => {
 
     return (
         <div className='flex flex-row flex-wrap gap-4 justify-center'>
-            <div className="self-center text-2xl leading-7">
+            <div className="self-center text-2xl font-semibold leading-7">
                 Explore our categories
             </div>
             {
@@ -39,7 +39,7 @@ const CatList = () => {
 
                                 </div>
                             </div>
-                            <p className='text-center'>{item.cat}</p>
+                            <p className='text-center text-secondary'>{item.cat}</p>
                         </Link>
                     </div>
                 )

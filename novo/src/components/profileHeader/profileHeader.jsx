@@ -4,7 +4,7 @@ import { MoreHoriz } from "@mui/icons-material";
 const ProfileHeader = () => {
     return (
         <div className="flex flex-col items-center w-full">
-            <div className="flex w-full pt-8 mb-6 px-6 z-1 w-full h-[140px] bg-amber-200 justify-between">
+            <div className="flex w-full pt-8 mb-6 px-6 z-1 w-full h-[140px] bg-tertiary justify-between">
                 <ShareIcon className="flex-start self-start text-gray-900" /> <MoreHoriz className="flex-end content-end text-gray-900" />
             </div>
             <div className="flex justify-center -mt-20">

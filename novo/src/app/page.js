@@ -11,7 +11,7 @@ import LandingReviews from "@/components/landingReviews/landingReviews";
 export default function Home() {
   return (
     <div>
-      <main className="flex min-h-screen flex-col items-center gap-4">
+      <main className="flex min-h-screen flex-col items-center gap-4 text-primary">
 
         <Header />
         <WelcomeDesc />

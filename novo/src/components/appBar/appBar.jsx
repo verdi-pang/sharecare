@@ -39,7 +39,7 @@ const AppBar_1 = () => {
         setAnchorElUser(null);
     };
     return (
-        <AppBar position="sticky">
+        <AppBar position="sticky" sx={{ bgcolor: "primary" }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -51,7 +51,7 @@ const AppBar_1 = () => {
                         sx={{
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },
-                            fontFamily: 'monospace',
+                            fontFamily: 'inter',
                             fontWeight: 700,
                             letterSpacing: '.3rem',
                             color: 'inherit',

@@ -12,8 +12,14 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        // "hero": "url('/public/img/hero-bkg.jpg')",
+        'hero': "url('/img/hero-bkg.jpg')",
       },
+      colors: {
+        primary: '#025E73',
+        secondary: '#011F26',
+        tertiary: '#F2A71B',
+        neutral: '#BFB78F',
+      }
     },
   },
   plugins: [
