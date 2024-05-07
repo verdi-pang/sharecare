@@ -1,5 +1,10 @@
+
+import ProfileHeader from "@/components/profileHeader/profileHeader";
+
 export default function ProfilePage() {
     return (
-        <div>Profile Page</div>
+        <div className="flex flex-col">
+            <ProfileHeader />
+        </div>
     )
 }

@@ -17,7 +17,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import Link from 'next/link';
 
 const pages = [{ name: 'Products', url: "/product" }, { name: 'About Us', url: "/about" }, { name: 'FAQ', url: "/faq" }];
-const settings = [{ name: 'Dashboard', url: "/dashboard" }, { name: 'Profile', url: "/dashboard/profile" }, { name: 'Account', url: "/dashboard/account" }, { name: 'Logout', url: "/" }];
+const settings = [{ name: 'Inbox', url: "/dashboard/inbox" }, { name: 'Profile', url: "/dashboard/profile" }, { name: 'Rentals', url: "/dashboard/rentals" }, { name: 'Logout', url: "/" }];
 
 const AppBar_1 = () => {
 
