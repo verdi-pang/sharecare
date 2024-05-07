@@ -1,11 +1,11 @@
 import Image from "next/image";
 import ShareIcon from '@mui/icons-material/Share';
-import LinearScaleIcon from '@mui/icons-material/LinearScale';
+import { MoreHoriz } from "@mui/icons-material";
 const ProfileHeader = () => {
     return (
         <div className="flex flex-col items-center w-full">
             <div className="flex w-full pt-8 mb-6 px-6 z-1 w-full h-[140px] bg-amber-200 justify-between">
-                <ShareIcon className="flex-start self-start text-gray-900" /> <LinearScaleIcon className="flex-end content-end text-gray-900" />
+                <ShareIcon className="flex-start self-start text-gray-900" /> <MoreHoriz className="flex-end content-end text-gray-900" />
             </div>
             <div className="flex justify-center -mt-20">
                 <div className="w-[104px] h-[104px] mb-2 border-solid border-2 border-white flex items-center justify-center rounded-full">

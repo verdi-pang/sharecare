@@ -1,6 +1,6 @@
 import ProfileRentals from "@/components/profileRentals/profileRentals";
 
-export default function ProfilePage() {
+export default function RentalsPage() {
     return (
         <ProfileRentals />
     )
