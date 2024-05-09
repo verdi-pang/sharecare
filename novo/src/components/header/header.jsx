@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Header = () => {
     return (
         <div className='flex flex-col'>
-            <div className="flex flex-col gap-4 p-4 bg-hero bg-cover bg-bottom bg-[length:350px_350px] bg-no-repeat min-h-[570px]">
+            <div className="flex flex-col gap-4 p-4 bg-hero bg-cover bg-bottom bg-[length:360px_360px] bg-no-repeat min-h-[580px]">
                 <div className='flex flex-col gap-3 h-48 justify-end'>
                     <div className="text-3xl font-bold leading-normal"><h1>Your Belongings, Their Next Adventure</h1>
                     </div>

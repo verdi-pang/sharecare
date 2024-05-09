@@ -11,11 +11,13 @@ const listItems = [
     { name: "Macbook Pro", url: "/product/macbookpro", imgUrl: "/img/electronics.jpg", ownerName: "Jim D.", ownerLocation: "Surrey", price: 10 },
     { name: "XM Scooter", url: "/product/xmscooter", imgUrl: "/img/scooter_1.jpg", ownerName: "Jonah D.", ownerLocation: "Surrey", price: 20 }
 ]
-const CatItemList = () => {
+const CatItemList = (param) => {
+    console.log("catlist", param)
+
     return (
         <div className="flex flex-row flex-wrap gap-4 justify-center py-4">
             {listItems.map(item =>
-                <div key={item.name} className="w-[160px]">
+                <div key={item.name} className="sm:w-[160px]">
                     <div className='rounded-lg overflow-hidden'>
                         <Link href={{ pathname: item.url, query: { id: item.name, imgUrl: item.imgUrl, ownerName: item.ownerName, ownerLocation: item.ownerLocation } }}>
                             <div className='size-40 relative'>
@@ -44,7 +46,6 @@ const CatItemList = () => {
                 </div>
 
             )}
-
             <div className="justify-center self-center px-6 py-2.5 mt-6 font-medium tracking-normal text-center text-white bg-slate-300 rounded-[300px]">
                 Load More
             </div>
