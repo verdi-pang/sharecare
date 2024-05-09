@@ -45,7 +45,7 @@ const queriedList = {
         { name: "Film Camera 2", url: "/product/filmcamera2", imgUrl: "/img/productlist/filmphoto/camera_6.jpg", ownerName: "Jones D.", ownerLocation: "Surrey", price: 30 },
     ],
 
-    eletronics: [
+    electronics: [
         { name: "Laptop 1", url: "/product/laptop1", imgUrl: "/img/productlist/electronics/laptop_1.jpg", ownerName: "John D.", ownerLocation: "Surrey", price: 20 },
 
         { name: "Laptop 2", url: "/product/laptop2", imgUrl: "/img/productlist/electronics/laptop_2.jpg", ownerName: "Johnny D.", ownerLocation: "Surrey", price: 30 },
