@@ -23,7 +23,7 @@ const CatList = (param) => {
                             <div className='rounded-lg overflow-hidden'>
                                 <div className='size-40 relative'>
                                     <Image src={item.imgUrl}
-                                        style={{ layout: "fill", objectFit: "cover" }}
+                                        style={{ objectFit: "cover" }}
                                         fill
                                         alt="image"
                                     />

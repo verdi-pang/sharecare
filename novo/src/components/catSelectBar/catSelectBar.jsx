@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
-const catMenu = [{ name: 'Camping', query: 'camping' }, { name: 'Film & Photography', query: 'filmphotograpy' }, { name: 'Drones', query: 'drones' }, { name: 'Eletronics', query: 'electronics' }, { name: 'Home Decorations', query: 'homeDecor' }, { name: 'Scooters', query: 'scooter' }]
+const catMenu = [{ name: 'Camping', query: 'camping' }, { name: 'Film & Photography', query: 'filmPhotography' }, { name: 'Drones', query: 'drones' }, { name: 'Eletronics', query: 'electronics' }, { name: 'Home Decorations', query: 'homeDecor' }, { name: 'Scooters', query: 'scooter' }]
 
 
 const CatSelectBar = () => {

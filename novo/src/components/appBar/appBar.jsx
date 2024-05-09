@@ -152,7 +152,7 @@ const AppBar_1 = () => {
                             onClose={handleCloseUserMenu}
                         >
                             {settings.map((setting) => (
-                                <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                                <MenuItem key={setting.name} onClick={handleCloseUserMenu}>
                                     <Typography textAlign="center"><Link href={setting.url}>{setting.name}</Link></Typography>
                                 </MenuItem>
                             ))}
