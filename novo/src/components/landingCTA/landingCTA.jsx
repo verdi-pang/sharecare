@@ -29,14 +29,16 @@ const LandingCTA = () => {
             </div>
 
             <div className="flex flex-col gap-6 mt-4">
-                <div className='w-[20rem] h-[30rem] relative'>
-                    <Image
-                        src="/img/iphone.png"
-                        style={{ objectFit: 'cover' }}
-                        fill
-                        alt="iphone"
-                    />
+                <div className='flex justify-center'>
+                    <div className='w-[20rem] h-[30rem] relative'>
+                        <Image
+                            src="/img/iphone.png"
+                            style={{ objectFit: 'cover' }}
+                            fill
+                            alt="iphone"
+                        />
 
+                    </div>
                 </div>
 
                 <div className='text-xl font-bold'>Join Sharecare Today</div>
