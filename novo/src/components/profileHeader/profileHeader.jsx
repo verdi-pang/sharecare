@@ -9,7 +9,7 @@ const ProfileHeader = () => {
             </div>
             <div className="flex justify-center -mt-20">
                 <div className="w-[104px] h-[104px] mb-2 border-solid border-2 border-white flex items-center justify-center rounded-full">
-                    <div className="relative overflow-hidden w-auto min-w-[100px]  min-h-[100px] rounded-full">
+                    <div className="relative overflow-hidden w-auto min-w-[100px] min-h-[100px] rounded-full">
                         <Image src={"/img/blackCat.jpg"} fill style={{ objectFit: "cover" }} />
                     </div>
                 </div>

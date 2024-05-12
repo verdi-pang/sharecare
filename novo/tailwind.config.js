@@ -13,12 +13,17 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         'hero': "url('/img/hero-bkg.jpg')",
+        'hero1': "url('/img/hero-bkg-1.svg')",
+        'hero-2': "url('/img/hero-bkg-2.svg')",
+        'hero-3': "url('/img/hero-bkg-3.svg')",
+        'hero-4': "url('/img/hero-bkg-4.svg')",
+        'welcDesc': "url('/img/welcomeDesc-bkg.svg')"
       },
       colors: {
-        primary: '#025E73',
-        secondary: '#011F26',
-        tertiary: '#F2A71B',
-        neutral: '#BFB78F',
+        primary: '#1A1C54',
+        secondary: '#353A8C',
+        tert: '#F2C301',
+        neutral: '#292D73',
       }
     },
   },

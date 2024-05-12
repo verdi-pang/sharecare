@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import AppBar_1 from "@/components/appBar/appBar";
@@ -7,6 +8,7 @@ import Footer from "@/components/footer/footer";
 
 
 const inter = Inter({ subsets: ["latin"] });
+const openSans = Open_Sans({ subsets: ['latin'] })
 
 export const metadata = {
   title: "Sharecare",
@@ -16,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={openSans.className}>
         <AppRouterCacheProvider>
           <AppBar_1 />
           {children}
