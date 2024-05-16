@@ -4,7 +4,7 @@ const LocationBox = () => {
     return (
         <div className='px-1.5 py-2'>
             <div className="flex gap-5 p-3 text-black rounded-xl border border-solid border-black border-opacity-10">
-                <MyLocationIcon />
+                <MyLocationIcon className='self-center' />
                 <div className="flex flex-col">
                     <div className="text-base font-medium tracking-normal leading-6">
                         Results for Toronto

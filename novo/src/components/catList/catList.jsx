@@ -2,12 +2,12 @@ import Image from 'next/image'
 import Link from 'next/link';
 
 const catItemsList = [
-    { cat: "Camping", imgUrl: "/img/tent.jpg" },
-    { cat: "Film & Photography", imgUrl: "/img/photography.jpg" },
-    { cat: "Drones", imgUrl: "/img/drone.jpg" },
-    { cat: "Electronics", imgUrl: "/img/electronics.jpg" },
-    { cat: "Scooter", imgUrl: "/img/scooter.jpg" },
-    { cat: "Home Decoration", imgUrl: "/img/homeDecor.jpg" }
+    { cat: "Camping", imgUrl: "/img/tent.jpg", url: "camping" },
+    { cat: "Film & Photography", imgUrl: "/img/photography.jpg", url: "filmPhotography" },
+    { cat: "Drones", imgUrl: "/img/drone.jpg", url: "drones" },
+    { cat: "Electronics", imgUrl: "/img/electronics.jpg", url: "electronics" },
+    { cat: "Scooter", imgUrl: "/img/scooter.jpg", url: "scooter" },
+    { cat: "Home Decoration", imgUrl: "/img/homeDecor.jpg", url: "homeDecor" }
 ]
 
 const CatList = (param) => {
@@ -19,7 +19,7 @@ const CatList = (param) => {
             {
                 catItemsList.map(item =>
                     <div key={item.cat}>
-                        <Link href={"/product"}>
+                        <Link href={`/product?category=${item.url}`}>
                             <div className='rounded-lg overflow-hidden'>
                                 <div className='size-40 relative'>
                                     <Image src={item.imgUrl}

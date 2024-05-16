@@ -1,6 +1,19 @@
 import Link from "next/link";
+import { usePathname, useSearchParams } from "next/navigation";
+import { useCallback } from "react";
 
 const ProductHeaderPressables = (params) => {
+    const queryPath = useSearchParams();
+    const pathname = usePathname();
+    const createQueryString = useCallback(
+        (name, value) => {
+            const params = new URLSearchParams(queryPath)
+            params.set(name, value)
+
+            return params.toString()
+        },
+        [queryPath]
+    );
     return (
         <div>
             <div className="text-2xl">{params.id}</div>
@@ -15,7 +28,7 @@ const ProductHeaderPressables = (params) => {
                 </div>
             </div>
             <div className="justify-center items-center px-6 py-2.5 mt-4 text-sm font-medium tracking-normal leading-5 text-center text-white bg-slate-500 rounded-[100px]">
-                <Link href="?avaliabilityModal=true">Check availability</Link>
+                <Link href={pathname + '?' + createQueryString('avaliabilityModal', true)}>Check availability</Link>
             </div>
         </div>
     );

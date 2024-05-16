@@ -1,5 +1,6 @@
 import PriceCheckIcon from '@mui/icons-material/PriceCheck';
 import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
+import MoodIcon from '@mui/icons-material/Mood';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -15,7 +16,7 @@ const LandingCTA = () => {
                 </div>
 
                 <div className="flex flex-col px-6 gap-2">
-                    <div><ThumbUpAltIcon fontSize='large' /></div>
+                    <div><MoodIcon fontSize='large' /></div>
                     <h1 className="font-bold">Sharing Made Simple</h1>
                     <p className="text-sm">Experience the simplicity of sharing. List your items, earn, and make new friends with Sharecare</p>
                 </div>
@@ -23,8 +24,8 @@ const LandingCTA = () => {
                 <div className="flex flex-col px-6 gap-2">
                     <div><ThumbUpAltIcon fontSize='large' /></div>
 
-                    <h1 className="font-bold">Sharing Made Simple</h1>
-                    <p className="text-sm">Experience the simplicity of sharing. List your items, earn, and make new friends with Sharecare</p>
+                    <h1 className="font-bold">Get More from Your Belongings</h1>
+                    <p className="text-sm">Your belongings are assets waiting to be shared. ShareCare connects you with those who need them</p>
                 </div>
             </div>
 
