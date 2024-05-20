@@ -13,8 +13,6 @@ const ConfirmationButtons = () => {
                 <div className="flex flex-row justify-center content-center items-center px-6 py-2.5 text-white bg-slate-500 rounded-lg">
                     <ChevronLeftIcon className="self-center" />
                     <div>Back to listing</div>
-
-
                 </div>
             </Link>
         </div>
