@@ -3,7 +3,14 @@
 import Link from "next/link";
 import { useState } from "react";
 
-const catMenu = [{ name: 'Camping', query: 'camping' }, { name: 'Film & Photography', query: 'filmPhotography' }, { name: 'Drones', query: 'drones' }, { name: 'Eletronics', query: 'electronics' }, { name: 'Home Decorations', query: 'homeDecor' }, { name: 'Scooters', query: 'scooter' }]
+const catMenu = [
+    { name: 'Camping', query: 'camping' },
+    { name: 'Film & Photography', query: 'filmPhotography' },
+    { name: 'Drones', query: 'drones' },
+    { name: 'Eletronics', query: 'electronics' },
+    { name: 'Home Decorations', query: 'homeDecor' },
+    { name: 'Scooters', query: 'scooter' }
+]
 
 
 const CatSelectBar = () => {
@@ -13,7 +20,7 @@ const CatSelectBar = () => {
             {catMenu.map((cat) => (
                 <Link href={{ query: { category: cat.query } }}>
                     <div className={`content-center justify-center px-6 py-2 rounded-[100px] + ${catSelect === cat ? "text-white bg-slate-500" : "border border-solid bg-white"}`}
-                        key={cat.name}
+                        key={cat.query}
                         onClick={() => setCatSelectOpen(cat)}>
                         {cat.name}
                     </div>

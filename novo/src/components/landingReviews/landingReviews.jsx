@@ -12,7 +12,7 @@ const LandingReviews = () => {
             <div><h2>Recent Reviews</h2></div>
 
             {reviewsList.map(review =>
-                <div key={review}>
+                <div key={review.name}>
                     <div className="flex flex-col p-4 gap-4 border-2 rounded-tr-lg rounded-br-lg rounded-bl-lg shadow-md">
                         <div>
                             <p className="text-base">{review.review}

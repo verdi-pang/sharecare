@@ -9,13 +9,13 @@ import { useSearchParams } from "next/navigation";
 
 export default function Categories() {
     const searchParams = useSearchParams();
-    const customParamCat = searchParams.get("category");
+    const customParamCat = searchParams.get("query");
     return (
         <div className="flex flex-col p-3">
             <SearchPageHero />
             <LocationBox />
             <CatSelectBar />
-            <CatItemList category={customParamCat} />
+            <CatItemList query={customParamCat} />
             <CatListSuggest />
             <LandingCTA />
         </div>

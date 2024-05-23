@@ -1,45 +1,43 @@
-import SearchIcon from '@mui/icons-material/Search';
-import Button from '@mui/material/Button';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import AddIcon from '@mui/icons-material/Add';
+import SearchForm from '../searchForm/searchForm';
 
 
 const Header = () => {
     return (
-        <div className='flex flex-col'>
-            <div className="flex flex-col gap-4 p-3 bg-[#fffced] min-h-[320px]">
-                <div className='flex flex-col gap-2 pt-4 z-10'>
-                    <div className="text-3xl font-bold pt-5"><h1>Your Belongings, Their Next Adventure</h1>
-                    </div>
-                    <div className="mt-2 text-base font-medium tracking-wide text-secondary leading-normal">
-                        <p>Turn your items into opportunities. ShareCare helps you rent out your things and enrich your life.</p>
-                    </div>
-
-                    {/* <div className='relative self-center'>
-                        <Image src={'/img/hero-bkg-4.svg'} width={340} height={340} style={{ objectFit: "cover" }} />
-                    </div> */}
+        <main className="flex flex-col items-center self-stretch mt-3.5 w-full text-base leading-4">
+            <section className="overflow-hidden relative flex-col self-stretch px-10 pt-32 pb-9 text-3xl font-semibold leading-10 text-center text-indigo-900 aspect-[1.87]">
+                <Image src="/img/hero-bkg-5.svg" layout="fill" className="object-cover absolute inset-0 size-full" alt="Your Belongings, Their Next Adventure" />
+                <header>
+                    <h1>Your Belongings,</h1>
+                    <h2 className="text-indigo-900">Their Next Adventure</h2>
+                </header>
+            </section>
+            <section className='flex flex-col justify-center'>
+                <p className="text-lg font-light leading-7 text-center text-neutral-500 px-3">
+                    Turn your items into opportunities. ShareCare helps you rent out your things and enrich your life.
+                </p>
+                <SearchForm />
+                <div className='text-center mt-6'>
+                    <p className=" text-indigo-900">OR</p>
                 </div>
-                <div className='flex flex-col gap-4 z-50'>
 
-                    <div className="flex flex-row w-full border-2 border-solid border-black justify-between rounded-xl align-center rounded-l-lg overflow-hidden bg-white shadow-md">
-
-                        <input type="text" placeholder='Find what you are looking for' className='w-full p-4' />
-                        <Button variant='containted' className='p-4 rounded-r-lg w-fit bg-blue-400'><SearchIcon /></Button>
-                    </div>
-                    <div className='w-full flex flex-row justify-center items-center '>
-                        <div className='w-1/2 flex flex-row gap-4'>
-                            <span className='my-auto text-xl leading-6 text-black uppercase'>OR</span>
-                            <Link href="/posting">
-                                <div className='flex-1 justify-center items-center px-6 py-2.5 text-sm font-medium tracking-normal leading-5 text-white bg-primary rounded-lg'>Post an Item</div>
-                            </Link>
+                <div className="flex w-fit gap-2.5 self-center px-5 py-3 mt-6 text-indigo-900 rounded-md border border-amber-400 border-dashed bg-amber-400 bg-opacity-20">
+                    <Link href='/posting'>
+                        <div className='flex gap-2.5 justify-center align-center self-center'>
+                            <AddIcon />
+                            <label className='self-center'>Post an Item</label>
                         </div>
-                    </div>
+                    </Link>
                 </div>
 
-
-            </div>
-
-        </div>
+            </section>
+            <figure>
+                <Image src="/img/hero-bottom-img.svg" width={344} height={344} className="mt-12 w-full aspect-[1.08] max-w-[344px]" alt="illustration" />
+            </figure>
+        </main>
     );
 }
 
