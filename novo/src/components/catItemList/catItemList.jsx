@@ -105,10 +105,18 @@ const queriedList = {
 const CatItemList = (param) => {
 
     const query = param.query
-
+    // console.log(Object.keys(queriedList))
+    const matchedKey = (obj) => {
+        if (obj in queriedList) {
+            return
+        } else {
+            return query === null
+        }
+    }
+    console.log(matchedKey(query))
     // const cats = Object.values(queriedList)
     // const filtered = Object.filter(queriedList, query)
-    if (query === null || typeof query === "undefined") {
+    if (query === null || typeof query === "undefined" || matchedKey(query) === false) {
         return (
             <div className="flex flex-row flex-wrap gap-4 justify-center py-4">
                 {listItems.map(item =>

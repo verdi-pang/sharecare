@@ -17,10 +17,10 @@ const CatSelectBar = () => {
     const [catSelect, setCatSelectOpen] = useState(null);
     return (
         <div className="flex gap-1 text-sm font-medium tracking-normal leading-5 text-center text-slate-500 overflow-x-auto text-nowrap">
-            {catMenu.map((cat) => (
+            {catMenu.map((cat, index) => (
                 <Link href={{ query: { category: cat.query } }}>
                     <div className={`content-center justify-center px-6 py-2 rounded-[100px] + ${catSelect === cat ? "text-white bg-slate-500" : "border border-solid bg-white"}`}
-                        key={cat.query}
+                        key={cat.index}
                         onClick={() => setCatSelectOpen(cat)}>
                         {cat.name}
                     </div>

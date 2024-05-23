@@ -3,7 +3,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
 const Footer = () => {
     return (
-        <div className="flex flex-col items-start p-4 mt-14 w-full bg-slate-500">
+        <div className="flex flex-col items-center self-stretch px-5 pt-12 mt-16 w-full text-base font-light text-center text-white bg-indigo-900 rounded-t-xl">
             <div className="text-lg leading-6 text-center text-white">About Sharecare</div>
             <div className="mt-2 text-sm tracking-wide leading-5 text-center text-white">
                 About us
