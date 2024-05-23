@@ -1,9 +1,9 @@
 import SearchIcon from '@mui/icons-material/Search';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 const SearchForm = () => {
-    const searchParams = useSearchParams();
+    // const searchParams = useSearchParams();
 
     const router = useRouter();
     const [searchValue, setSearchValue] = useState();
