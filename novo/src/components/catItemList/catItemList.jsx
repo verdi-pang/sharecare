@@ -108,10 +108,10 @@ const CatItemList = (param) => {
 
     // const cats = Object.values(queriedList)
     // const filtered = Object.filter(queriedList, query)
-    if (query === null) {
+    if (query === null || query === undefined) {
         return (
             <div className="flex flex-row flex-wrap gap-4 justify-center py-4">
-                {query === null && listItems.map(item =>
+                {listItems.map(item =>
                     <div key={item.name} className="sm:w-[160px]">
                         <div className='rounded-lg overflow-hidden'>
                             <Link href={{ pathname: item.url, query: { id: item.name, imgUrl: item.imgUrl, ownerName: item.ownerName, ownerLocation: item.ownerLocation } }}>

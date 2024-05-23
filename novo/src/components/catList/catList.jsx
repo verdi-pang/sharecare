@@ -12,15 +12,17 @@ const catItemsList = [
 
 const CatList = (param) => {
     return (
-        <div className='flex flex-row flex-wrap gap-4 justify-center'>
+        <div className='flex flex-row flex-wrap gap-4 justify-center py-6'>
             <div className="self-center text-2xl font-semibold leading-7">
-                Explore our categories
+                <p>
+                    Explore our <span className="text-amber-400">Categories</span>
+                </p>
             </div>
             {
                 catItemsList.map(item =>
-                    <div key={item.cat}>
+                    <div key={item.cat} className='rounded-lg border odd:border-indigo-900 even:border-amber-400 shadow odd:shadow-indigo-900 even:shadow-amber-400'>
                         <Link href={`/product?category=${item.url}`}>
-                            <div className='rounded-lg overflow-hidden'>
+                            <div className='rounded-t-lg overflow-hidden'>
                                 <div className='size-40 relative'>
                                     <Image src={item.imgUrl}
                                         style={{ objectFit: "cover" }}
@@ -30,7 +32,7 @@ const CatList = (param) => {
 
                                 </div>
                             </div>
-                            <p className='text-center text-secondary'>{item.cat}</p>
+                            <p className='text-center text-secondary font-semibold py-2'>{item.cat}</p>
                         </Link>
                     </div>
                 )
