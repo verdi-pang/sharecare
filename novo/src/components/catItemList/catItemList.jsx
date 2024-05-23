@@ -108,7 +108,7 @@ const CatItemList = (param) => {
 
     // const cats = Object.values(queriedList)
     // const filtered = Object.filter(queriedList, query)
-    if (query === null || query === undefined) {
+    if (query === null || typeof query === "undefined") {
         return (
             <div className="flex flex-row flex-wrap gap-4 justify-center py-4">
                 {listItems.map(item =>
