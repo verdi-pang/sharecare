@@ -8,11 +8,11 @@ import SearchForm from '../searchForm/searchForm';
 const Header = () => {
     return (
         <main className="flex flex-col items-center self-stretch mt-3.5 w-full text-base leading-4">
-            <section className="overflow-hidden relative flex-col self-stretch px-10 pt-32 pb-9 text-3xl font-semibold leading-10 text-center text-indigo-900 aspect-[1.87]">
-                <Image src="/img/hero-bkg-5.svg" fill className="object-cover absolute inset-0 size-full" alt="Your Belongings, Their Next Adventure" />
+            <section className="relative flex-col self-stretch px-4 pt-32 pb-6 text-3xl font-semibold leading-10 text-center text-indigo-900 aspect-[1.87]">
+                <Image src="/img/hero-bkg-5.svg" fill className="object-cover absolute size-full" alt="Your Belongings, Their Next Adventure" />
                 <header>
-                    <h1>Your Belongings,</h1>
-                    <h2 className="text-indigo-900">Their Next Adventure</h2>
+                    <h1 className='text-black font-bold'>Your Belongings,</h1>
+                    <h2 className="text-indigo-900 font-bold">Their Next Adventure</h2>
                 </header>
             </section>
             <section className='flex flex-col justify-center'>
@@ -20,11 +20,11 @@ const Header = () => {
                     Turn your items into opportunities. ShareCare helps you rent out your things and enrich your life.
                 </p>
                 <SearchForm />
-                <div className='text-center mt-6'>
+                <div className='text-center mt-2'>
                     <p className=" text-indigo-900">OR</p>
                 </div>
 
-                <div className="flex w-fit gap-2.5 self-center px-5 py-3 mt-6 text-indigo-900 rounded-md border border-amber-400 border-dashed bg-amber-400 bg-opacity-20">
+                <div className="flex w-fit gap-2.5 self-center px-5 py-3 mt-4 text-indigo-900 rounded-md border border-amber-400 border-dashed bg-amber-400 bg-opacity-20">
                     <Link href='/posting'>
                         <div className='flex gap-2.5 justify-center align-center self-center'>
                             <AddIcon />
