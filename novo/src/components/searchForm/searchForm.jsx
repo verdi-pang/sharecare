@@ -12,7 +12,7 @@ const SearchForm = () => {
     return (
 
         <div className='p-3'>
-            <form className="flex z-10 gap-5 py-1 pr-1 pl-3.5 bg-white rounded-lg border border-indigo-900 border-solid">
+            <form className="flex z-10 gap-5 py-1 pr-1 pl-3.5 bg-white rounded-lg border border-indigo-900 border-solid shadow shadow-primary">
                 <div className="flex flex-auto gap-2.5 my-auto font-light text-indigo-900">
                     <SearchIcon />
                     {/* <label htmlFor="searchInput" className="sr-only text-sm">

@@ -6,6 +6,7 @@ import WelcomeDesc from "@/components/welcomeDesc/welcomeDesc";
 import CatList from "@/components/catList/catList";
 import LandingCTA from "@/components/landingCTA/landingCTA";
 import LandingReviews from "@/components/landingReviews/landingReviews";
+import JoinTodayCTA from "@/components/joinTodayCTA/joinTodayCTA";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         {/* <HowItWorks /> */}
         <CatList />
         <LandingCTA />
+        <JoinTodayCTA />
         <LandingReviews />
 
 

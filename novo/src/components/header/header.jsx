@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <main className="flex flex-col items-center self-stretch mt-3.5 w-full text-base leading-4">
             <section className="overflow-hidden relative flex-col self-stretch px-10 pt-32 pb-9 text-3xl font-semibold leading-10 text-center text-indigo-900 aspect-[1.87]">
-                <Image src="/img/hero-bkg-5.svg" layout="fill" className="object-cover absolute inset-0 size-full" alt="Your Belongings, Their Next Adventure" />
+                <Image src="/img/hero-bkg-5.svg" fill className="object-cover absolute inset-0 size-full" alt="Your Belongings, Their Next Adventure" />
                 <header>
                     <h1>Your Belongings,</h1>
                     <h2 className="text-indigo-900">Their Next Adventure</h2>

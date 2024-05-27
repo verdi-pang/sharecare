@@ -24,6 +24,10 @@ module.exports = {
         secondary: '#353A8C',
         tert: '#F2C301',
         neutral: '#292D73',
+      },
+      boxShadow: {
+        'primary': '4px 4px 0 0 rgba(26,35,126,1)',
+        'yellow': '4px 4px 0 0 rgba(255,202,40,1)',
       }
     },
   },
