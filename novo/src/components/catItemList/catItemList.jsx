@@ -118,78 +118,102 @@ const CatItemList = (param) => {
     // const filtered = Object.filter(queriedList, query)
     if (query === null || typeof query === "undefined" || matchedKey(query) === false) {
         return (
-            <div className="flex flex-row flex-wrap gap-4 justify-center py-4">
+            <div className="flex flex-row flex-wrap py-4 gap-4 px-3 justify-center">
                 {listItems.map(item =>
-                    <div key={item.name} className="sm:w-[160px]">
-                        <div className='rounded-lg overflow-hidden'>
-                            <Link href={{ pathname: item.url, query: { id: item.name, imgUrl: item.imgUrl, ownerName: item.ownerName, ownerLocation: item.ownerLocation } }}>
-                                <div className='size-40 relative'>
-                                    <Image src={item.imgUrl}
-                                        style={{ layout: "fill", objectFit: "cover" }}
-                                        fill
-                                        alt={item.name}
-                                    />
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="flex flex-col">
-                            <Link href={item.url}>
-                                <div>
-                                    <p className="mt-2 text-base leading-6 text-wrap text-black">{item.name}</p>
-                                </div>
-                            </Link>
-                            <div className="flex gap-0.5 mt-1 tracking-wide items-center">
-                                <div className="text-sm text-black">{item.ownerName}</div>
-                                <StarIcon fontSize="10" />
-                                <div className="text-sm text-gray-600">(23)</div>
+                    <div key={item.name} className="flex flex-col pb-4 bg-white rounded-xl border border-indigo-900 border-solid overflow-hidden w-[165px] sm:min-w-[165px]">
+                        <Link href={{ pathname: item.url, query: { id: item.name, imgUrl: item.imgUrl, ownerName: item.ownerName, ownerLocation: item.ownerLocation } }} >
+                            <div className='flex overflow-hidden relative flex-col items-end self-center px-16 pt-2.5 pb-20 aspect-[1.25] w-[163px]'>
+                                <Image src={item.imgUrl}
+                                    style={{ layout: "fill", objectFit: "cover" }}
+                                    fill
+                                    objectFit="cover"
+                                    alt={item.name}
+                                />
                             </div>
-                            <div className="tracking-wide text-black">{item.ownerLocation}</div>
-                            <div className="text-2xl leading-7 text-black">${item.price}/Day</div>
-                        </div>
+                        </Link>
+                        <Link href={{ pathname: item.url, query: { id: item.name, imgUrl: item.imgUrl, ownerName: item.ownerName, ownerLocation: item.ownerLocation } }}>
+                            <div className="flex flex-col px-3.5 mt-3 w-[160px]">
+                                <p className="text-base leading-4 text-indigo-900">{item.name}</p>
+
+
+                                <div className="flex gap-3 mt-3.5 whitespace-nowrap">
+                                    <div className="grow text-sm leading-3 text-neutral-500">{item.ownerLocation}</div>
+                                    <div className="flex-auto text-base font-semibold leading-4 text-indigo-900">${item.price}/Day
+                                    </div>
+
+                                </div>
+                                <div className="shrink-0 mt-3.5 h-px bg-black border border-black border-solid" />
+                                <div className="flex gap-5 justify-between mt-4 text-sm leading-4 text-neutral-500">
+                                    <div className="flex gap-1.5">
+                                        <div className="tracking-wide text-black">{item.ownerName}</div>
+                                    </div>
+                                    <div className="flex gap-1.5 my-auto whitespace-nowrap">
+                                        <StarIcon fontSize="10" color="amber-400" />
+                                        <div className="text-sm text-gray-600">(23)</div>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </Link>
                     </div>
 
                 )}
 
-                <div className="justify-center self-center px-6 py-2.5 mt-6 font-medium tracking-normal text-center text-white bg-slate-300 rounded-[300px]">
+                <div className="justify-center px-6 py-3.5 mt-4 font-medium text-center text-indigo-900 bg-slate-300 border border-solid border-indigo-900 rounded-md shadow-primary shadow-indigo-900">
                     Load More
                 </div>
             </div>
         );
     } else {
         return (
-            <div className="flex flex-row flex-wrap gap-4 justify-center py-4">
+            <div className="flex flex-row flex-wrap gap-4 justify-center py-4 px-3">
 
                 {queriedList[query].map(item =>
-                    <div key={item.name} className="sm:w-[160px] flex flex-col pt-1 pb-4 w-full bg-white rounded-xl border border-indigo-900 border-solid">
-                        <div className='rounded-lg overflow-hidden'>
-                            <Link href={{ pathname: item.url, query: { id: item.name, imgUrl: item.imgUrl, ownerName: item.ownerName, ownerLocation: item.ownerLocation } }}>
-                                <div className='size-40 relative'>
-                                    <Image src={item.imgUrl}
-                                        style={{ layout: "fill", objectFit: "cover" }}
-                                        fill
-                                        alt={item.name}
-                                    />
-                                </div>
-                            </Link>
-                        </div>
-                        <div className="flex flex-col">
-                            <Link href={item.url}>
-                                <div>
-                                    <p className="mt-2 text-base leading-6 text-wrap text-black">{item.name}</p>
-                                </div>
-                            </Link>
-                            <div className="flex gap-0.5 mt-1 tracking-wide items-center">
-                                <div className="text-sm text-black">{item.ownerName}</div>
-                                <StarIcon fontSize="10" />
-                                <div className="text-sm text-gray-600">(23)</div>
+                    <div key={item.name} className="flex flex-col pb-4 bg-white rounded-xl border border-indigo-900 border-solid overflow-hidden w-[165px] sm:min-w-[165px]">
+                        <Link href={{ pathname: item.url, query: { id: item.name, imgUrl: item.imgUrl, ownerName: item.ownerName, ownerLocation: item.ownerLocation } }} >
+                            <div className='flex overflow-hidden relative flex-col items-end self-center px-16 pt-2.5 pb-20 aspect-[1.25] w-[163px]'>
+                                <Image src={item.imgUrl}
+                                    style={{ layout: "fill", objectFit: "cover" }}
+                                    fill
+                                    objectFit="cover"
+                                    alt={item.name}
+                                />
                             </div>
-                            <div className="tracking-wide text-black">{item.ownerLocation}</div>
-                            <div className="text-2xl leading-7 text-black">${item.price}/Day</div>
-                        </div>
+                        </Link>
+                        <Link href={{ pathname: item.url, query: { id: item.name, imgUrl: item.imgUrl, ownerName: item.ownerName, ownerLocation: item.ownerLocation } }}>
+                            <div className="flex flex-col px-3.5 mt-3 w-[160px]">
+                                <p className="text-base leading-4 text-indigo-900">{item.name}</p>
+
+
+                                <div className="flex gap-3 mt-3.5 whitespace-nowrap">
+                                    <div className="grow text-sm leading-3 text-neutral-500">{item.ownerLocation}</div>
+                                    <div className="flex-auto text-base font-semibold leading-4 text-indigo-900">${item.price}/Day
+                                    </div>
+
+                                </div>
+                                <div className="shrink-0 mt-3.5 h-px bg-black border border-black border-solid" />
+                                <div className="flex gap-5 justify-between mt-4 text-sm leading-4 text-neutral-500">
+                                    <div className="flex gap-1.5">
+                                        <div className="tracking-wide text-black">{item.ownerName}</div>
+                                    </div>
+                                    <div className="flex gap-1.5 my-auto whitespace-nowrap">
+                                        <StarIcon fontSize="10" color="amber-400" />
+                                        <div className="text-sm text-gray-600">(23)</div>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </Link>
                     </div>
 
                 )}
-                <div className="justify-center self-center px-6 py-2.5 mt-6 font-medium tracking-normal text-center text-white bg-slate-300 rounded-[300px]">
+                <div className="justify-center px-6 py-3.5 mt-4 font-medium text-center text-indigo-900 bg-slate-300 border border-solid border-indigo-900 rounded-md shadow-primary shadow-indigo-900">
                     Load More
                 </div>
             </div>

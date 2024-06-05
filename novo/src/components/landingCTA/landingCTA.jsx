@@ -8,7 +8,7 @@ const LandingCTA = () => {
             <div className="flex flex-col text-center gap-6 ">
 
                 <div className="flex flex-col px-2 gap-2">
-                    <h1 className="text-2xl font-bold">Share More, Earn More</h1>
+                    <h1 className="text-2xl font-bold text-indigo-900">Share More, Earn More</h1>
                     <figure>
                         <Image src='/img/CTAasset/CTA_1.jpg' width={530} height={344} className="w-full max-w-[530px]" alt="illustration" />
                     </figure>
@@ -18,7 +18,7 @@ const LandingCTA = () => {
                 <Divider className='text-indigo-400' />
 
                 <div className="flex flex-col px-2 gap-2">
-                    <h1 className="text-2xl font-bold">Sharing Made Simple</h1>
+                    <h1 className="text-2xl font-bold text-indigo-900">Sharing Made Simple</h1>
                     <figure>
                         <Image src='/img/CTAasset/CTA_2.svg' width={400} height={300} className="w-full max-w-[300px]" alt="illustration" />
                     </figure>
@@ -28,7 +28,7 @@ const LandingCTA = () => {
                 <Divider />
 
                 <div className="flex flex-col px-2 gap-2">
-                    <h1 className="text-2xl font-bold">Get More from Your Belongings</h1>
+                    <h1 className="text-2xl font-bold text-indigo-900">Get More from Your Belongings</h1>
 
                     <figure>
                         <Image src='/img/CTAasset/CTA_3.svg' width={520} height={400} className="w-full max-w-[520px]" alt="illustration" />
