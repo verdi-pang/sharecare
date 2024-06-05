@@ -11,7 +11,7 @@ export default function Categories() {
     const searchParams = useSearchParams();
     const customParamCat = searchParams.get("query");
     return (
-        <div className="flex flex-col p-3">
+        <div className="flex flex-col py-3">
             <SearchPageHero />
             <LocationBox />
             <CatSelectBar />

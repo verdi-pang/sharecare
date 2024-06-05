@@ -23,10 +23,18 @@ const SearchBar = () => {
         replace(`${pathname}?${params.toString()}`);
     }
     return (
-        <div className="flex flex-row w-full border-2 border-solid border-black justify-between rounded-xl align-center rounded-l-lg overflow-hidden bg-white shadow-md">
+        <div className="flex z-10 gap-2 py-1 pr-1 pl-1.5 bg-white rounded-lg border border-indigo-900 border-solid shadow shadow-primary">
+            <div className="flex flex-auto gap-2.5 my-auto font-light text-indigo-900">
+                <SearchIcon />
+                <input type="text" placeholder='Find what you are looking for' className='flex-auto' defaultValue={searchParams.get('query')?.toString()} onChange={(e) => setSearchValue(e.target.value)} />
+            </div>
+            <button
+                className="justify-center px-4 py-4 text-white whitespace-nowrap bg-indigo-900 rounded-md"
+                type="button"
+                onClick={() => { handleSearch(searchValue) }}>
+                Search
+            </button>
 
-            <input type="text" placeholder='Find what you are looking for' className='w-full p-4' defaultValue={searchParams.get('query')?.toString()} onChange={(e) => setSearchValue(e.target.value)} />
-            <Button variant='containted' className='p-4 rounded-r-lg w-fit bg-blue-400' onClick={() => { handleSearch(searchValue) }}><SearchIcon /></Button>
         </div>
     );
 }
