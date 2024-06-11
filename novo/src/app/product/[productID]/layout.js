@@ -9,7 +9,7 @@ import { Suspense } from "react";
 export default function productPageLayout({ children }) {
     // const router = useRouter();
     return (
-        <section className="flex flex-col p-3 gap-2">
+        <section className="flex flex-col gap-2">
 
             {children}
             <Suspense fallback={<FallbackScreen />}>

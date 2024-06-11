@@ -3,7 +3,7 @@ import ProductImage from "../productImage/productImage";
 
 const ProductHeader = (params) => {
     return (
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 p-3">
             <ProductImage id={params.id} imgUrl={params.imgUrl} />
             <ProductHeaderPressables id={params.id} imgUrl={params.imgUrl} />
         </div>

@@ -20,16 +20,17 @@ export default function ProductDetails() {
     const customParamImgUrl = searchParams.get("imgUrl");
     const customParamOwnerName = searchParams.get("ownerName")
     const customParamOwnerLocation = searchParams.get("ownerLocation")
+    const customParamCat = searchParams.get("cat");
+    const customParamSubCat = searchParams.get("subCat");
     const router = useRouter();
-
     return (
-        <div className="flex flex-col gap-4">
-            <div className="flex flex-row content-center font-bold" onClick={router.back}><ChevronLeftIcon />
+        <div className="flex flex-col gap-2">
+            <div className="flex flex-row content-center font-thin px-3 mt-2" onClick={router.back}><ChevronLeftIcon />
                 <div>Back</div>
             </div>
             {/* This is {params.productID} */}
             <ProductHeader id={customParamID} imgUrl={customParamImgUrl} ownerLocation={customParamOwnerLocation} />
-            <ProductDesc ownerName={customParamOwnerName} />
+            <ProductDesc ownerName={customParamOwnerName} id={customParamID} cat={customParamCat} subCat={customParamSubCat} />
             <ProductUserDesc ownerName={customParamOwnerName} />
             <ProductUserMore ownerName={customParamOwnerName} />
             <ProductUserReview ownerName={customParamOwnerName} />
