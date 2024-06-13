@@ -21,7 +21,7 @@ const CatList = (param) => {
             {
                 catItemsList.map(item =>
                     <div key={item.cat} className='rounded-lg border odd:border-indigo-900 even:border-amber-400 shadow odd:shadow-primary even:shadow-yellow'>
-                        <Link href={`/product?category=${item.url}`}>
+                        <Link href={`/product?query=${item.url}`}>
                             <div className='rounded-t-lg overflow-hidden'>
                                 <div className='size-40 relative'>
                                     <Image src={item.imgUrl}

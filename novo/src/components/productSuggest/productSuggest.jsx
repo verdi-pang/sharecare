@@ -1,7 +1,7 @@
 const ProductSuggest = () => {
     return (
-        <div className="flex flex-col mt-3.5 px-4 text-black">
-            <div className="text-2xl leading-7">Check out other categories
+        <div className="flex flex-col mt-3.5 px-4 pt-6 pb-8 text-primary bg-amber-400 bg-opacity-10">
+            <div className="text-2xl font-bold self-center leading-7">Check out other categories
             </div>
             <div className="flex flex-col flex-wrap content-start  py-2.5 mt-3 w-full text-sm font-medium tracking-normal leading-5 text-center text-slate-500">
                 <div className="flex gap-2.5">
