@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-// const { nextui } = require("@nextui-org/react");
+const { nextui } = require("@nextui-org/react");
 
 
 module.exports = {
@@ -8,6 +8,8 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     './packages/**/*.{js,ts,jsx,tsx,mdx}',
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+
   ],
   theme: {
     extend: {
@@ -36,7 +38,7 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    // nextui()
+    nextui()
   ],
 };
 

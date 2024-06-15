@@ -4,6 +4,9 @@ import "./globals.css";
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import AppBar_1 from "@/components/appBar/appBar";
 import Footer from "@/components/footer/footer";
+import { NextUIProvider } from "@nextui-org/react";
+import NewNav from "@/components/navigation/newNav/newNav";
+
 
 
 
@@ -19,11 +22,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={openSans.className}>
-        <AppRouterCacheProvider>
-          <AppBar_1 />
+        <NextUIProvider>
+          <NewNav />
           {children}
           <Footer />
-        </AppRouterCacheProvider>
+        </NextUIProvider>
       </body>
     </html>
   );

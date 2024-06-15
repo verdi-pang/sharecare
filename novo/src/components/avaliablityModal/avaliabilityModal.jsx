@@ -4,7 +4,7 @@ import { usePathname, useSearchParams } from "next/navigation";
 import { useCallback, useState } from "react";
 // import Calendar from "react-calendar";
 // import 'react-calendar/dist/Calendar.css';
-// import { RangeCalendar } from "@nextui-org/calendar";
+import { RangeCalendar } from "@nextui-org/calendar";
 import { today, getLocalTimeZone } from '@internationalized/date';
 
 
@@ -34,6 +34,7 @@ const AvaliabilityModal = () => {
         },
         [searchParams]
     );
+
     return (
         <>
             {avaliabilityModal &&
@@ -41,12 +42,15 @@ const AvaliabilityModal = () => {
                     <div className="fixed bottom-0 w-full bg-white m-auto p-8">
                         <div className="flex flex-col items-center">
                             {/* <Calendar onChange={onChange} value={value} /> */}
-                            {/* <RangeCalendar
+                            <RangeCalendar
                                 aria-label="Date (Uncontrolled)"
                                 defaultValue={{
                                     start: today(getLocalTimeZone()),
                                     end: today(getLocalTimeZone()).add({ weeks: 1 }),
-                                }} /> */}
+
+                                }}
+                                minValue={today(getLocalTimeZone())}
+                            />
 
                             <br />
                             <Link href={pathname + '?' + deleteQueryString('avaliabilityModal', true)} >
