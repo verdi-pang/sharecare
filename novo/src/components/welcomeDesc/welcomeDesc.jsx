@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const WelcomeDesc = () => {
     return (
-        <div className="flex flex-col self-stretch px-6 pt-16 pb-8 mt-16 w-full text-lg font-light leading-7 text-center bg-amber-100 text-neutral-500">
+        <div className="flex flex-col self-stretch px-6 pt-16 pb-8 mt-16 w-full text-lg font-light leading-7 text-center bg-amber-400 text-neutral-500 bg-opacity-10">
             <header className="self-center text-3xl font-semibold leading-10 text-slate-950">
                 Welcome to Novo: <span className="text-amber-400">Share What You Have, Find What You Need</span>
             </header>

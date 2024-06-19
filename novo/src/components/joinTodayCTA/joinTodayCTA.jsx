@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const JoinTodayCTA = () => {
     return (
-        <div className="flex flex-col gap-2 py-8 px-5 w-full bg-amber-100 text-neutral-500">
+        <div className="flex flex-col gap-2 py-8 px-5 w-full bg-amber-400 text-neutral-500 bg-opacity-10">
 
             <h1 className='text-2xl font-bold text-center text-amber-400'>Join Sharecare Today</h1>
 

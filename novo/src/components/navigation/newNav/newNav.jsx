@@ -1,6 +1,7 @@
 'use client';
 import { useState } from "react";
 import { Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
+import ShareCareWordMark from "@/components/logos/wordmark";
 
 
 const NewNav = () => {
@@ -18,29 +19,29 @@ const NewNav = () => {
 
             <NavbarContent className="sm:hidden pr-3" justify="center">
                 <NavbarBrand>
-                    {/* <AcmeLogo /> */}
-                    <p className="font-bold text-inherit">ShareCare</p>
+                    <ShareCareWordMark />
+                    {/* <p className="font-bold text-inherit">ShareCare</p> */}
                 </NavbarBrand>
             </NavbarContent>
 
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
                 <NavbarBrand>
-                    {/* <AcmeLogo /> */}
-                    <p className="font-bold text-inherit">ShareCare</p>
+                    <ShareCareWordMark />
+                    {/* <p className="font-bold text-inherit">ShareCare</p> */}
                 </NavbarBrand>
                 <NavbarItem>
-                    <Link color="foreground" href="#">
-                        Features
-                    </Link>
-                </NavbarItem>
-                <NavbarItem isActive>
-                    <Link href="#" aria-current="page">
-                        Customers
+                    <Link href="/product">
+                        Products
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="foreground" href="#">
-                        Integrations
+                    <Link href="/about" aria-current="page">
+                        About Us
+                    </Link>
+                </NavbarItem>
+                <NavbarItem>
+                    <Link href="/faq">
+                        FAQ
                     </Link>
                 </NavbarItem>
             </NavbarContent>

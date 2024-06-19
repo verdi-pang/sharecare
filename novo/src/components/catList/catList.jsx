@@ -27,7 +27,7 @@ const CatList = (param) => {
                                     <Image src={item.imgUrl}
                                         style={{ objectFit: "cover" }}
                                         fill
-                                        alt="image"
+                                        alt={item.cat}
                                     />
 
                                 </div>

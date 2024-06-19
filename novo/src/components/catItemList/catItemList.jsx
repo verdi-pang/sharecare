@@ -145,10 +145,10 @@ const CatItemList = (param) => {
                                 <div className="shrink-0 mt-1 h-px bg-black border border-black border-solid" />
                                 <div className="flex gap-5 justify-between mt-1 text-sm leading-4 text-neutral-500">
                                     <div className="flex gap-1.5">
-                                        <div className="tracking-wide text-black">{item.ownerName}</div>
+                                        <div className="tracking-wide text-black self-center">{item.ownerName}</div>
                                     </div>
-                                    <div className="flex gap-1.5 my-auto whitespace-nowrap">
-                                        <StarIcon fontSize="10" color="amber-400" />
+                                    <div className="flex gap-1.5 my-auto whitespace-nowrap items-center">
+                                        <StarIcon fontSize="10" className="self-center text-amber-400" />
                                         <div className="text-sm text-gray-600">(23)</div>
                                     </div>
 
@@ -199,9 +199,9 @@ const CatItemList = (param) => {
                                     <div className="flex gap-1.5">
                                         <div className="tracking-wide text-black">{item.ownerName}</div>
                                     </div>
-                                    <div className="flex gap-1.5 my-auto whitespace-nowrap">
-                                        <StarIcon fontSize="10" color="secondary" />
-                                        <div className="text-sm text-gray-600">(23)</div>
+                                    <div className="flex gap-1.5 my-auto whitespace-nowrap items-center">
+                                        <StarIcon fontSize="10" className="self-center text-amber-400" />
+                                        <div className="text-sm text-gray-600 self-center">(23)</div>
                                     </div>
 
 
