@@ -26,9 +26,8 @@ const AvaliabilityModal = () => {
     const [value, setValue] = useState({
         start: today(getLocalTimeZone()),
         end: today(getLocalTimeZone()).add({ weeks: 1 }),
-
     });
-
+    console.log(value)
     const deleteQueryString = useCallback(
         (name, value) => {
             const params = new URLSearchParams(searchParams)
