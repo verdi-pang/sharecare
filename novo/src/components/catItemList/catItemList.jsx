@@ -132,15 +132,14 @@ const CatItemList = (param) => {
                             </div>
                         </Link>
                         <Link href={{ pathname: item.url, query: { id: item.name, imgUrl: item.imgUrl, ownerName: item.ownerName, ownerLocation: item.ownerLocation, cat: item.cat, subCat: item.subCat } }}>
-                            <div className="flex flex-col px-3.5 mt-3 w-[160px] min-h-[110px] justify-between">
+                            <div className="flex flex-col px-3.5 mt-3 w-[160px] min-h-[110px] justify-around">
                                 <p className="text-base leading-4 text-indigo-900 font-semibold">{item.name}</p>
-
-
                                 <div className="flex gap-3 mt-1 whitespace-nowrap">
-                                    <div className="grow text-sm leading-3 text-neutral-500 self-center">{item.ownerLocation}</div>
+                                    <div className="grow text-sm leading-3 text-neutral-500 self-center">{item.ownerLocation}
+
+                                    </div>
                                     <div className="flex-auto text-base font-semibold leading-4 text-indigo-900">${item.price}/Day
                                     </div>
-
                                 </div>
                                 <div className="shrink-0 mt-1 h-px bg-black border border-black border-solid" />
                                 <div className="flex gap-5 justify-between mt-1 text-sm leading-4 text-neutral-500">
@@ -151,11 +150,7 @@ const CatItemList = (param) => {
                                         <StarIcon fontSize="10" className="self-center text-amber-400" />
                                         <div className="text-sm text-gray-600">(23)</div>
                                     </div>
-
-
                                 </div>
-
-
                             </div>
                         </Link>
                     </div>
@@ -184,7 +179,7 @@ const CatItemList = (param) => {
                             </div>
                         </Link>
                         <Link href={{ pathname: item.url, query: { id: item.name, imgUrl: item.imgUrl, ownerName: item.ownerName, ownerLocation: item.ownerLocation, cat: item.cat, subCat: item.subCat } }}>
-                            <div className="flex flex-col px-3.5 mt-3 w-[160px] min-h-[110px]">
+                            <div className="flex flex-col px-3.5 mt-3 w-[160px] min-h-[110px] justify-around">
                                 <p className="text-base leading-4 text-indigo-900 font-semibold">{item.name}</p>
 
 

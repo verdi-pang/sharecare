@@ -19,7 +19,9 @@ const NewNav = () => {
 
             <NavbarContent className="sm:hidden pr-3" justify="center">
                 <NavbarBrand>
-                    <ShareCareWordMark />
+                    <Link href="/">
+                        <ShareCareWordMark />
+                    </Link>
                     {/* <p className="font-bold text-inherit">ShareCare</p> */}
                 </NavbarBrand>
             </NavbarContent>
@@ -48,10 +50,10 @@ const NewNav = () => {
 
             <NavbarContent justify="end">
                 <NavbarItem className="hidden lg:flex">
-                    <Link href="#">Login</Link>
+                    <Link href="/auth/login">Login</Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Button as={Link} color="warning" href="#" variant="flat">
+                    <Button as={Link} color="warning" href="/auth/login" variant="flat">
                         Sign Up
                     </Button>
                 </NavbarItem>

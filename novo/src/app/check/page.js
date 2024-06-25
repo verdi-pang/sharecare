@@ -74,14 +74,14 @@ export default function CheckPage() {
                 <h2 className="text-2xl font-bold">Message the owner</h2>
 
                 <textarea name="description" rows={6} className="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Send any other details about your request including pick up times or questions you have about the item" />
-                <div className="flex flex-row w-full gap-4 flex-1">
-                    <Link href={"/"}>
-                        <div className="justify-center items-center px-6 py-4 mt-4 text-lg font-semibold tracking-normal leading-5 text-center text-primary bg-white rounded-lg shadow shadow-primary border border-primary flex-1">
+                <div className="flex gap-4">
+                    <Link href={"/"} className="grow min-w-fit">
+                        <div className="justify-center items-center px-6 py-4 mt-4 text-lg font-semibold tracking-normal leading-5 text-center text-primary bg-white rounded-lg shadow shadow-primary border border-primary grow min-w-fit">
                             Back
                         </div>
                     </Link>
-                    <Link href={"/product"}>
-                        <div className="justify-center items-center px-6 py-4 mt-4 text-lg font-semibold tracking-normal leading-5 text-center text-primary bg-slate-300 rounded-lg shadow shadow-primary border border-primary flex-1">
+                    <Link href={"/product"} className="grow min-w-fit">
+                        <div className="justify-center items-center px-6 py-4 mt-4 text-lg font-semibold tracking-normal leading-5 text-center text-primary bg-slate-300 rounded-lg shadow shadow-primary border border-primary grow min-w-fit">
                             Submit Request
                         </div>
                     </Link>
