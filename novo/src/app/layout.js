@@ -6,6 +6,7 @@ import AppBar_1 from "@/components/appBar/appBar";
 import Footer from "@/components/footer/footer";
 import { NextUIProvider } from "@nextui-org/react";
 import NewNav from "@/components/navigation/newNav/newNav";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
 
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         <NextUIProvider>
           <NewNav />
           {children}
+          <SpeedInsights />
           <Footer />
         </NextUIProvider>
       </body>
