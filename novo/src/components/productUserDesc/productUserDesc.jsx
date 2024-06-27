@@ -30,10 +30,10 @@ const ProductUserDesc = () => {
                 </div>
 
             </div>
-            <div className="justify-center items-center px-6 py-4 mt-4 text-lg font-medium tracking-normal leading-5 text-center text-primary bg-white border border-primary rounded-lg shadow shadow-primary">
+            {/* <div className="justify-center items-center px-6 py-4 mt-4 text-lg font-medium tracking-normal leading-5 text-center text-primary bg-white border border-primary rounded-lg shadow shadow-primary">
                 Message John
-            </div>
-            <div className="justify-center items-center px-6 py-4 mt-4 text-lg font-medium tracking-normal leading-5 text-center text-primary bg-slate-300 border border-primary rounded-lg shadow shadow-primary">
+            </div> */}
+            <div className="justify-center items-center px-6 py-4 mt-4 text-lg font-medium tracking-normal leading-5 text-center text-primary bg-white border border-primary rounded-lg shadow shadow-primary">
                 See John’s profile
             </div>
         </div>
