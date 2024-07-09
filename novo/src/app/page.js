@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Header from "@/components/header/header";
 import Navbar from "@/components/navbar/navbar";
 import WelcomeDesc from "@/components/welcomeDesc/welcomeDesc";
@@ -8,12 +8,10 @@ import LandingCTA from "@/components/landingCTA/landingCTA";
 import LandingReviews from "@/components/landingReviews/landingReviews";
 import JoinTodayCTA from "@/components/joinTodayCTA/joinTodayCTA";
 
-
 export default function Home() {
   return (
     <div>
-      <main className="flex flex-col min-h-screen items-center  text-primary">
-
+      <main className="flex min-h-screen flex-col items-center">
         <Header />
         <WelcomeDesc />
         {/* <HowItWorks /> */}
@@ -21,8 +19,6 @@ export default function Home() {
         <LandingCTA />
         <JoinTodayCTA />
         <LandingReviews />
-
-
       </main>
     </div>
   );
