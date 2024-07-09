@@ -12,7 +12,7 @@ import JoinTodayCTA from "@/components/joinTodayCTA/joinTodayCTA";
 export default function Home() {
   return (
     <div>
-      <main className="flex min-h-screen flex-col items-center  text-primary">
+      <main className="flex flex-col min-h-screen items-center  text-primary">
 
         <Header />
         <WelcomeDesc />
