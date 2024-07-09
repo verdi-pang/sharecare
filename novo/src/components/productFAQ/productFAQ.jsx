@@ -31,10 +31,10 @@ const ProductFAQ = () => {
       <div className="self-center text-2xl font-semibold leading-7 text-amber-400">
         FAQs
       </div>
-      {faqContents.map((index, index) => (
+      {faqContents.map((index, i) => (
         <div
           className="w-full rounded-lg border border-solid border-primary bg-white p-3 text-primary shadow shadow-primary"
-          key={index}
+          key={i}
         >
           <div
             className="flex flex-row justify-between font-semibold text-primary"
