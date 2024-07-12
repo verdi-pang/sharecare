@@ -23,9 +23,9 @@ const reviewsList = [
 
 const LandingReviews = () => {
   return (
-    <div className="flex flex-col gap-4 p-4">
+    <div className="flex flex-col gap-4 p-4 lg:w-2/5 lg:py-12">
       <div>
-        <h2>Recent Reviews</h2>
+        <h2 className="text-xl font-bold">Recent Reviews</h2>
       </div>
 
       {reviewsList.map((review, index) => (
