@@ -3,11 +3,11 @@ import ConfirmationCallout from "@/components/confirmationCallout/confirmationCa
 import ConfirmationHeader from "@/components/confirmationHeader/confirmationHeader";
 
 export default function Confirmation() {
-    return (
-        <div className="flex flex-col px-3 py-4">
-            <ConfirmationHeader />
-            <ConfirmationCallout />
-            <ConfirmationButtons />
-        </div>
-    )
+  return (
+    <div className="flex flex-col px-3 py-4 lg:py-14">
+      <ConfirmationHeader />
+      <ConfirmationCallout />
+      <ConfirmationButtons />
+    </div>
+  );
 }
