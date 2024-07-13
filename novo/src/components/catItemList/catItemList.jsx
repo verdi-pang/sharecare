@@ -534,7 +534,7 @@ const CatItemList = (param) => {
     matchedKey(query) === false
   ) {
     return (
-      <div className="flex flex-row flex-wrap justify-center gap-4 px-3 py-4">
+      <div className="flex flex-row flex-wrap justify-center gap-4 px-3 py-4 lg:w-3/5 lg:self-center xl:w-2/5">
         {listItems.map((item, index) => (
           <div
             key={index}
@@ -615,7 +615,7 @@ const CatItemList = (param) => {
     );
   } else {
     return (
-      <div className="flex flex-row flex-wrap justify-center gap-4 px-3 py-4">
+      <div className="flex flex-row flex-wrap justify-center gap-4 px-3 py-4 lg:w-3/5 lg:self-center xl:w-2/5">
         {queriedList[query].map((item, index) => (
           <div
             key={index}

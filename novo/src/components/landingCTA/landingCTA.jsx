@@ -3,7 +3,7 @@ import { Divider } from "@nextui-org/divider";
 
 const LandingCTA = () => {
   return (
-    <div className="mt-6 flex flex-col gap-6 p-4 lg:w-3/5 lg:px-4 lg:py-14">
+    <div className="mt-6 flex flex-col gap-6 p-4 lg:w-3/5 lg:self-center lg:px-4 lg:py-14">
       <div className="flex flex-col gap-6 text-center lg:gap-12">
         <div className="flex flex-col gap-2 px-2">
           <h1 className="text-2xl font-bold text-indigo-900">
