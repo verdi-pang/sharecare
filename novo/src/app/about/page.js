@@ -7,14 +7,14 @@ import JoinTodayCTA from "@/components/joinTodayCTA/joinTodayCTA";
 import LandingCTA from "@/components/landingCTA/landingCTA";
 
 export default function aboutPage() {
-    return (
-        <div className="flex flex-col gap-4">
-            <AboutHeader />
-            <AboutCallout />
-            <JoinTodayCTA />
-            <LandingCTA />
-            <AboutHowitworks />
-            <CatList />
-        </div>
-    )
+  return (
+    <div className="flex flex-col justify-center gap-4">
+      <AboutHeader />
+      <AboutCallout />
+      <JoinTodayCTA />
+      <LandingCTA />
+      <AboutHowitworks />
+      <CatList />
+    </div>
+  );
 }

@@ -16,7 +16,7 @@ const catItemsList = [
 
 const CatList = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-center gap-4 py-6 lg:w-2/5 lg:flex-col lg:py-12">
+    <div className="flex flex-row flex-wrap justify-center gap-4 py-6 lg:w-2/5 lg:flex-col lg:self-center lg:py-12">
       <div className="self-center text-2xl font-semibold leading-7">
         <p>
           Explore our <span className="text-amber-400">Categories</span>
