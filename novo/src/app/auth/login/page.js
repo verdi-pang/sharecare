@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Login() {
   return (
     <div className="flex px-4 pb-20 pt-8 text-sm font-medium lg:justify-center">
-      <div className="flex flex-col justify-center gap-6 px-3 py-4 lg:w-2/5">
+      <div className="flex w-full flex-col justify-center gap-6 px-3 py-4 lg:w-2/5">
         <div className="flex flex-col gap-2">
           <div className="self-center text-3xl font-semibold text-primary">
             Welcome to Novo

@@ -5,8 +5,8 @@ import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
 const ProductImage = (params) => {
   return (
     <div className="flex flex-col lg:w-fit lg:self-center">
-      <div className="overflow-hidden rounded-lg">
-        <div className="relative h-[366px] w-[366px] lg:h-[640px] lg:w-[640px] lg:self-center">
+      <div className="relative overflow-hidden rounded-lg">
+        <div className="h-[366px] w-[366px] lg:h-[640px] lg:w-[640px] lg:self-center">
           <Image
             src={params.imgUrl}
             style={{ objectFit: "cover" }}
